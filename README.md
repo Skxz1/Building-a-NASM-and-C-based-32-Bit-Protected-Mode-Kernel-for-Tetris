@@ -29,18 +29,37 @@ The game ends when a new tetromino collides on spawn.
 
 ---
 
-## 🖥️ Build & Run (macOS Example)
+## 🖥️ Build & Run (macOS)
 
-Install dependencies using **Homebrew**:
+To run this kernel you will need to install the following tools using **Homebrew**:
 
+### 1️⃣ Install Homebrew
 ```bash
-brew install i386-elf-binutils i386-elf-gcc i386-elf-gdb qemu nasm
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Then build & run:
-
+### 2️⃣ Install i386 ELF binutils
 ```bash
-make
+brew install i386-elf-binutils
+```
+
+### 3️⃣ Install i386 ELF GCC compiler
+```bash
+brew install i386-elf-gcc
+```
+
+### 4️⃣ Install i386 ELF GDB debugger
+```bash
+brew install i386-elf-gdb
+```
+
+### 5️⃣ Install QEMU and NASM
+```bash
+brew install qemu nasm
+```
+
+### 6️⃣ Build and run the kernel
+```bash
 make run
 ```
 
